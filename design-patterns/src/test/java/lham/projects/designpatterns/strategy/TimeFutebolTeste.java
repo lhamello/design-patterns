@@ -10,4 +10,13 @@ public class TimeFutebolTeste {
 		TimeFutebol time = new TimeFutebol(EstrategiaOfensiva.CHUVEIRINHO);
 		Assert.assertNotNull(time.getEstrategiaOfensiva());
 	}
+	
+	@Test
+	public void devePoderAlterarEstrategiaOfensiva() {
+		TimeFutebol time = new TimeFutebol(EstrategiaOfensiva.CHUVEIRINHO);
+		Assert.assertSame(EstrategiaOfensiva.CHUVEIRINHO, time.getEstrategiaOfensiva());
+		
+		time.alterarEstrategiaOfensiva(EstrategiaOfensiva.JOGAR_PELAS_LATERAIS);
+		Assert.assertSame(EstrategiaOfensiva.JOGAR_PELAS_LATERAIS, time.getEstrategiaOfensiva());
+	}
 }

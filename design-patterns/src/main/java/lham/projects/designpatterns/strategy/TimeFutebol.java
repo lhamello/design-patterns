@@ -11,4 +11,8 @@ public class TimeFutebol {
 	public EstrategiaOfensiva getEstrategiaOfensiva() {
 		return estrategiaOfensiva;
 	}
+
+	public void alterarEstrategiaOfensiva(EstrategiaOfensiva novaEstrategiaOfensiva) {
+		this.estrategiaOfensiva = novaEstrategiaOfensiva;
+	}
 }
