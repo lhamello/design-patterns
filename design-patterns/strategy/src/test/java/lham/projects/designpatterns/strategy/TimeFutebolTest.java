@@ -3,7 +3,7 @@ package lham.projects.designpatterns.strategy;
 import org.junit.Assert;
 import org.junit.Test;
 
-public class TimeFutebolTeste {
+public class TimeFutebolTest {
 
 	@Test
 	public void devePossuirEstrategiaOfensiva() {
