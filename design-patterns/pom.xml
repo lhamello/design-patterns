@@ -6,7 +6,7 @@
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>pom</packaging>
 	<name>Design Patterns</name>
-	<description>Aplicando Padrões de Projeto	</description>
+	<description>Aplicando Padrões de Projeto</description>
 
 	<properties>
 		<sonar.sources>src/main</sonar.sources>
