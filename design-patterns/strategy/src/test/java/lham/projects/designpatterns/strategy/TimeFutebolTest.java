@@ -1,10 +1,11 @@
 package lham.projects.designpatterns.strategy;
 
+import static org.hamcrest.CoreMatchers.equalTo;
+import static org.hamcrest.CoreMatchers.is;
+import static org.junit.Assert.assertThat;
+
 import org.junit.Assert;
 import org.junit.Test;
-
-import lham.projects.designpatterns.strategy.EstrategiaOfensiva;
-import lham.projects.designpatterns.strategy.TimeFutebol;
 
 public class TimeFutebolTest {
 
@@ -27,6 +28,6 @@ public class TimeFutebolTest {
 	public void devePoderAtacarUtilizandoEstrategiaOfensivaAtual() {
 		TimeFutebol time = new TimeFutebol(EstrategiaOfensiva.JOGAR_PELO_LADO_DIREITO);
 
-		Assert.assertEquals("Atacando pelo lado direito.", time.atacar());
+		assertThat("Atacando pelo lado direito.", is(equalTo(time.atacar())));
 	}
 }
