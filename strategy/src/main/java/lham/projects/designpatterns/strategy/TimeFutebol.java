@@ -1,5 +1,10 @@
 package lham.projects.designpatterns.strategy;
 
+/**
+ * 
+ * @author titi
+ *
+ */
 public class TimeFutebol {
 
 	private EstrategiaOfensiva estrategiaOfensiva;
@@ -19,7 +24,7 @@ public class TimeFutebol {
 	public String atacar() {
 		switch (estrategiaOfensiva) {
 		case CHUVEIRINHO:
-			return "Jogando a bola na área sempre que possível.";
+			return "Jogando a bola na ï¿½rea sempre que possï¿½vel.";
 		case JOGAR_PELAS_LATERAIS:
 			return "Atavando pelos dois lados.";
 		case JOGAR_PELO_LADO_DIREITO:
@@ -29,7 +34,7 @@ public class TimeFutebol {
 		case JOGAR_PELO_MEIO:
 			return "Jogando pelo meio.";
 		default:
-			throw new RuntimeException("Este time não possui estratégia ofensiva definida.");
+			throw new RuntimeException("Este time nï¿½o possui estratï¿½gia ofensiva definida.");
 		}
 	}
 }
