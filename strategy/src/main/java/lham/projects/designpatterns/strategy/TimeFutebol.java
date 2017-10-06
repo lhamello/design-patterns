@@ -1,10 +1,5 @@
 package lham.projects.designpatterns.strategy;
 
-/**
- * 
- * @author titi
- *
- */
 public class TimeFutebol {
 
 	private EstrategiaOfensiva estrategiaOfensiva;
